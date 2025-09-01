@@ -1,3 +1,4 @@
+// Stack implementation using array
 class StackArray {
     private int[] arr;
     private int top;
@@ -9,6 +10,7 @@ class StackArray {
         top = -1;
     }
 
+    // Push element onto stack
     public void push(int x) {
         if (top == capacity - 1) {
             System.out.println("Stack Overflow");
@@ -17,6 +19,7 @@ class StackArray {
         arr[++top] = x;
     }
 
+    // Pop element from stack
     public int pop() {
         if (isEmpty()) {
             System.out.println("Stack Underflow");
@@ -25,6 +28,7 @@ class StackArray {
         return arr[top--];
     }
 
+    // Peek top element
     public int peek() {
         if (!isEmpty()) {
             return arr[top];
@@ -34,6 +38,7 @@ class StackArray {
         }
     }
 
+    // Check if stack is empty
     public boolean isEmpty() {
         return top == -1;
     }
