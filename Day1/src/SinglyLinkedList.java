@@ -1,3 +1,4 @@
+// Singly Linked List implementation
 class SinglyLinkedList {
     Node head;
 
@@ -11,6 +12,7 @@ class SinglyLinkedList {
         }
     }
 
+    // Insert at end of list
     public void insert(int data) {
         Node newNode = new Node(data);
         if (head == null) {
@@ -24,6 +26,7 @@ class SinglyLinkedList {
         }
     }
 
+    // Print list
     public void printList() {
         Node temp = head;
         while (temp != null) {
