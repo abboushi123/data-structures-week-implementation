@@ -1,3 +1,4 @@
+// BinaryTree with traversal algorithms
 class BinaryTree {
     Node root;
 
@@ -11,6 +12,7 @@ class BinaryTree {
         }
     }
 
+    // Inorder Traversal (Left -> Root -> Right)
     public void inorder(Node node) {
         if (node != null) {
             inorder(node.left);
@@ -19,6 +21,7 @@ class BinaryTree {
         }
     }
 
+    // Preorder Traversal (Root -> Left -> Right)
     public void preorder(Node node) {
         if (node != null) {
             System.out.print(node.data + " ");
@@ -27,6 +30,7 @@ class BinaryTree {
         }
     }
 
+    // Postorder Traversal (Left -> Right -> Root)
     public void postorder(Node node) {
         if (node != null) {
             postorder(node.left);
@@ -45,13 +49,14 @@ class BinaryTree {
 
         System.out.println("Inorder (Left → Root → Right):");
         tree.inorder(tree.root);
-        System.out.println("\n");
+        System.out.println();
 
         System.out.println("Preorder (Root → Left → Right):");
         tree.preorder(tree.root);
-        System.out.println("\n");
+        System.out.println();
 
         System.out.println("Postorder (Left → Right → Root):");
         tree.postorder(tree.root);
+        System.out.println();
     }
 }
