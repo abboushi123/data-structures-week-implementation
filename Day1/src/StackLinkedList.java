@@ -1,3 +1,4 @@
+// Stack implementation using linked list
 class StackLinkedList {
     private Node top;
 
@@ -11,12 +12,14 @@ class StackLinkedList {
         }
     }
 
+    // Push element
     public void push(int x) {
         Node newNode = new Node(x);
         newNode.next = top;
         top = newNode;
     }
 
+    // Pop element
     public int pop() {
         if (isEmpty()) {
             System.out.println("Stack Underflow");
@@ -27,6 +30,7 @@ class StackLinkedList {
         return value;
     }
 
+    // Peek element
     public int peek() {
         if (!isEmpty()) {
             return top.data;
@@ -36,6 +40,7 @@ class StackLinkedList {
         }
     }
 
+    // Check empty
     public boolean isEmpty() {
         return top == null;
     }
