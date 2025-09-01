@@ -1,17 +1,21 @@
 # Day 3 - Data Structures in Java
 
 ## Implemented Structures
-- BinaryTree
-- BinarySearchTree
-- Tree traversal algorithms (inorder, preorder, postorder)
+- **BinaryTree**: Tree with nodes having left and right children, supports traversal.
+- **BinarySearchTree (BST)**: Ordered binary tree where left < root < right.
 
-## How to Run
-1. Navigate to the `src` directory.
-2. Compile a file using `javac FileName.java`.
-3. Run using `java FileName`.
+## Time & Space Complexity
+- BinaryTree Traversals (Inorder, Preorder, Postorder):
+  - O(n) time, O(h) space (h = height)
+- BST:
+  - Insert/Search/Delete: O(h), average O(log n), worst O(n)
+  - Space: O(n)
 
-Example:
+## Usage Example
 ```bash
 javac BinaryTree.java
 java BinaryTree
 ```
+
+## How to Run Tests
+Each file includes a `main` method with sample usage.
