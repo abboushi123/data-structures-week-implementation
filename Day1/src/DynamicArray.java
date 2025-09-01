@@ -1,3 +1,4 @@
+// Dynamic Array implementation with auto-resizing
 public class DynamicArray {
     private int[] arr;
     private int size;
@@ -9,6 +10,7 @@ public class DynamicArray {
         arr = new int[capacity];
     }
 
+    // Add new element, resize if full
     public void add(int value) {
         if (size == capacity) {
             resize();
@@ -16,6 +18,7 @@ public class DynamicArray {
         arr[size++] = value;
     }
 
+    // Get element at index
     public int get(int index) {
         if (index < 0 || index >= size) {
             throw new IndexOutOfBoundsException("Index out of range");
@@ -23,10 +26,12 @@ public class DynamicArray {
         return arr[index];
     }
 
+    // Return current size
     public int size() {
         return size;
     }
 
+    // Resize array (double the capacity)
     private void resize() {
         capacity *= 2;
         int[] newArr = new int[capacity];
