@@ -1,8 +1,8 @@
 // MinHeap implementation using array
 class MinHeap {
-    private int[] heap;     // array to store heap elements
-    private int size;       // current number of elements in heap
-    private int capacity;   // maximum capacity of the heap
+    private int[] heap;
+    private int size;
+    private int capacity;   
 
     // Constructor: initialize heap with given capacity
     public MinHeap(int capacity) {
